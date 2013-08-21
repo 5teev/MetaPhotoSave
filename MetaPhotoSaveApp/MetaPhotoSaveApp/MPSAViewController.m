@@ -9,11 +9,16 @@
 #import "MPSAViewController.h"
 
 @interface MPSAViewController ()
-
+- (IBAction)tapPhotoButton:(UIButton *)sender;
 @end
 
 @implementation MPSAViewController
 
+- (IBAction)tapPhotoButton:(UIButton *)sender
+{
+//    NSLog(@"take photo: %@", sender);
+    
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
