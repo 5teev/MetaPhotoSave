@@ -21,6 +21,8 @@
 		AF228AE417C34A5C00C83061 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF228AC617C34A5B00C83061 /* UIKit.framework */; };
 		AF228AEC17C34A5C00C83061 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF228AEA17C34A5C00C83061 /* InfoPlist.strings */; };
 		AF228AEE17C34A5C00C83061 /* MetaPhotoSaveAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF228AED17C34A5C00C83061 /* MetaPhotoSaveAppTests.m */; };
+		AFFB3B9B17C73B5A00BDCAAC /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFB3B9A17C73B5A00BDCAAC /* AssetsLibrary.framework */; };
+		AFFB3B9D17C73B7D00BDCAAC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFB3B9C17C73B7D00BDCAAC /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		AF228AE917C34A5C00C83061 /* MetaPhotoSaveAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MetaPhotoSaveAppTests-Info.plist"; sourceTree = "<group>"; };
 		AF228AEB17C34A5C00C83061 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AF228AED17C34A5C00C83061 /* MetaPhotoSaveAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetaPhotoSaveAppTests.m; sourceTree = "<group>"; };
+		AFFB3B9A17C73B5A00BDCAAC /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		AFFB3B9C17C73B7D00BDCAAC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFFB3B9D17C73B7D00BDCAAC /* CoreLocation.framework in Frameworks */,
+				AFFB3B9B17C73B5A00BDCAAC /* AssetsLibrary.framework in Frameworks */,
 				AF228AC517C34A5B00C83061 /* CoreGraphics.framework in Frameworks */,
 				AF228AC717C34A5B00C83061 /* UIKit.framework in Frameworks */,
 				AF228AC317C34A5B00C83061 /* Foundation.framework in Frameworks */,
@@ -101,6 +107,8 @@
 		AF228AC117C34A5B00C83061 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AFFB3B9C17C73B7D00BDCAAC /* CoreLocation.framework */,
+				AFFB3B9A17C73B5A00BDCAAC /* AssetsLibrary.framework */,
 				AF228AC217C34A5B00C83061 /* Foundation.framework */,
 				AF228AC417C34A5B00C83061 /* CoreGraphics.framework */,
 				AF228AC617C34A5B00C83061 /* UIKit.framework */,
@@ -200,6 +208,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "SEDIFY, Inc.";
 				TargetAttributes = {
+					AF228ABE17C34A5B00C83061 = {
+						DevelopmentTeam = 45U56R3H24;
+					};
 					AF228ADF17C34A5C00C83061 = {
 						TestTargetID = AF228ABE17C34A5B00C83061;
 					};
@@ -375,9 +386,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MetaPhotoSaveApp/MetaPhotoSaveApp-Prefix.pch";
 				INFOPLIST_FILE = "MetaPhotoSaveApp/MetaPhotoSaveApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -388,9 +401,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MetaPhotoSaveApp/MetaPhotoSaveApp-Prefix.pch";
 				INFOPLIST_FILE = "MetaPhotoSaveApp/MetaPhotoSaveApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -455,6 +470,7 @@
 				AF228AF317C34A5C00C83061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF228AF417C34A5C00C83061 /* Build configuration list for PBXNativeTarget "MetaPhotoSaveAppTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +479,7 @@
 				AF228AF617C34A5C00C83061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

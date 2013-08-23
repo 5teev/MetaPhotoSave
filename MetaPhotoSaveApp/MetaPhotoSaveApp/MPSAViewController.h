@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MPSAViewController : UIViewController
+@interface MPSAViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @end
